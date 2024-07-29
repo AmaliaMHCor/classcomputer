@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  box-sizing: border-box;
+  background: #171B34
+}
+.header {
+  width: 100%;
+  background: #01042d;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.bars_nemu {
+  position: absolute;
+  display: none;
+}
+.contMenu {
+  width: 75%;
+  margin: auto;
+  background: #01042d;
+  height: 100px;
+  display: flex;
+}
+.logo {
+  background: red;
+  width: 10%;
+  overflow: hidden;
+  height: 100px;
+}
+.logo > img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+}
+.nav {
+  background: #01042d;
+  width: 90%;
+  height: 50px;
+  margin: 40px 0px 0px 0px;
+}
+.nav > ul {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  margin: auto;
+  padding: 0px;
+}
+.nav > ul > li {
+  background: #01042d;
+  list-style: none;
+  padding: 15px;
+  cursor: pointer;
+  color: white;
+  background: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.submenu:first-child {
+  color: #22b3f1;
+  font-weight: bold;
+}
+.submenu > ul {
+  display: none;
+  position: absolute;
+}
+.submenu:hover > ul {
+  display: block;
+  background: #09aff4;
+  margin-top: 10px;
+}
+.submenu > ul > li {
+  padding: 10px;
+}
+/******************inicio galleria*****************/
+.contGaleria {
+  width: 100%;
+  background-image: url("../resourses/textura.png");
+  height: 500px;
+}
+.banner {
+  width: 75%;
+  height: 500px;
+  background: transparent;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.banner-right {
+  background: transparent;
+  width: 50%;
+  height: 150px;
+}
+.banner-left {
+  background: transparent;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: monaco;
+}
+.contRedes {
+  padding: 5px;
+  width: 100%;
+  height: auto;
+  background-image: url("../resourses/linea.png");
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contRedes > img {
+  display: block;
+  width: 55px;
+  padding: 10px;
+  cursor: pointer;
+  background: #171a34;
+  border: solid 1px white;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.name {
+  color: #09aff4;
+  font-size: 40px;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+  margin-top: 20px;
+}
+.banner-left > span:nth-child(3) {
+  color: white;
+  font-size: 45px;
+  font-family: fantasy;
+  margin-top: 30px;
+  text-shadow: -1px -1px 0px #0596d4, 1px -1px 0px #0596d4, 1px 1px 0px #0596d4,
+    -1px 1px 0px #0596d4;
+}
+.descripcion {
+  color: white;
+  font-size: 20px;
+}
+.banner-left > h2 {
+  cursor: pointer;
+  color: white;
+  text-align: center;
+  background: #09aff4;
+  padding: 7px;
+  border-radius: 20px 0px 20px 0px;
+}
+.banner-right {
+  background: transparent;
+  margin: 10px 0px 0px 50px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contBanerRight {
+  position: relative;
+  height: 80%;
+  width: 35%;
+  background: transparent;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.contBanerRight img {
+  width:450px;
+  position: absolute;
+  z-index: 2;
+  margin: 40px 0px 0px 0px;
+}
+
+/******************fin galleria*****************/
+
+/******************************responsive  768px**/
+
+@media (max-width: 768px) {
+  .contMenu {
+    width: 100%;
+  }
+  .logo {
+    width: 20%;
+  }
+  .nav {
+    width: 0%;
+    overflow: hidden;
+    margin: 100px 0px 0px 0px;
+  }
+  .navResponsive {
+    margin: 100px 0px 0px 0px;
+    position: absolute;
+    padding-bottom: 10px;
+    height: auto;
+    width: 50%;
+    white-space: nowrap;
+    transition: all 0.5s;
+    overflow: hidden;
+  }
+  .navResponsive2 {
+    width: 0%;
+    overflow: hidden;
+    margin: 100px 0px 0px 0px;
+  }
+  .bars_nemu {
+    position: absolute;
+    display: initial;
+    margin: 30px 0px 0px 90%;
+  }
+  .bars_nemu > img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+  }
+  .bars_nemu > img:nth-child(2) {
+    display: none;
+  }
+  .nav > ul {
+    flex-direction: column;
+  }
+  .nav > ul > li {
+    background: #09aff4;
+    align-items: start;
+    padding-left: 30px;
+  }
+  .submenu > ul {
+    position: relative;
+    height: auto;
+  }
+}

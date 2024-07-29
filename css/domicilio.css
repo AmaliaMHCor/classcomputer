@@ -1,0 +1,55 @@
+.domicilio{
+    
+    background: transparent;
+    width: 150px;
+    height: 200px;
+    margin: 50px auto;
+    width: 75%;
+    display: flex;
+    flex-direction: row;   
+    height: 300px;
+    justify-content: space-between;
+    color: white;
+    border-top: dotted 2px white;
+    padding-top: 20px;
+
+}
+.domicilioInterno{
+    background-color:transparent;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.domicilioInterno >p{
+font-size: 16px;text-align: justify;
+color: white;
+}
+.domicilioInterno input{
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    bottom: 0px;
+    transition: all 0.5s;
+    border: none;
+}
+.domicilioInterno input:hover{
+    background: #008BC5;
+    color:white;
+    cursor: pointer;
+}
+.domicilio div:last-child{
+    background-color:purple;
+    width: 40%;
+    height: 100%;
+}
+.domicilio div:last-child >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: fill;
+    border-radius: 5px;
+    border: solid 3px white;
+}
