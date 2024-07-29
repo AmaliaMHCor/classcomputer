@@ -344,7 +344,7 @@
         </div>
         <div class="container">
             <div class="grid">
-                <div class="grid-item">
+                <div class="grid-item txtnosostros">
                     <h2>POR QUÉ NOSOTROS</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. quos labore voluptatum inventore quia temporibus non.</p>
                 </div>
