@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    
+    <link rel="stylesheet" href="css/nosotros.css" type="text/css">
+
 </head>
 
 <body>
@@ -343,39 +344,33 @@
 
         </div>
         <div class="container">
+            <div class="text-section">
+                <h2>POR QUÉ NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos labore voluptatum inventore quia temporibus non.</p>
+            </div>
             <div class="grid">
                 <div class="grid-item">
-                    <h2>POR QUÉ NOSOTROS</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. quos labore voluptatum inventore quia temporibus non.</p>
-                </div>
-                <div class="grid-item">
                     <img src="img/iconos/cyber-security.png" alt="Icono 2">
-                    <h3>Título 2</h3>
-                    <p>Descripción del segundo motivo.</p>
+                    <h3>Microelectronica</h3>
                 </div>
                 <div class="grid-item">
                     <img src="img/iconos/cyber-security.png" alt="Icono 3">
-                    <h3>Título 3</h3>
-                    <p>Descripción del tercer motivo.</p>
+                    <h3>Mantenimiento</h3>
                 </div>
                 <div class="grid-item">
                     <img src="img/iconos/cyber-security.png" alt="Icono 4">
-                    <h3>Título 4</h3>
-                    <p>Descripción del cuarto motivo.</p>
+                    <h3>Soporte</h3>
                 </div>
                 <div class="grid-item">
                     <img src="img/iconos/cyber-security.png" alt="Icono 5">
-                    <h3>Título 5</h3>
-                    <p>Descripción del quinto motivo.</p>
+                    <h3>Recuperación de datos</h3>
                 </div>
                 <div class="grid-item">
                     <img src="img/iconos/cyber-security.png" alt="Icono 5">
-                    <h3>Título 6</h3>
-                    <p>Descripción del quinto motivo.</p>
+                    <h3>Administracion de redes</h3>
                 </div>
-                
             </div>
-        </div> 
+        </div>
     </div>
 
     <footer class="footer"></footer>

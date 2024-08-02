@@ -1,39 +1,58 @@
-        .container {
-            width: 75%;
-            height: 650px;
-            margin: auto;
-            background: transparent;
-            display: grid;
-        }
-        .container > h2 {
-            grid-column: 1/5;
-            grid-row: 1/2;
-            background: transparent;
-            margin: 0px;
-            line-height: 50px;
-            text-align: center;
-            color: white;
-        }
-        .grid {
-            display: flex;
-            gap: 20px;
-            margin-top: 10px;
-            padding: 0px 0px 30px 0px;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
-            height: 100%;
-            background: transparent;
-        }
-        .grid .grid-item .txtnosotros h2 {
-            background: #f9f9f9;
-            padding: 20px;
-            /* border: 1px solid #ddd; */
-            border-radius: 5px;
-            text-align: justify;
-            color: white;
-        }
-         
+.container {
+    padding-top: 20px;
+    width: 75%;
+    height: 700px;
+    margin: 20px auto;
+    display: flex;
+    border-top: dotted 2px white;
+    align-items: flex-start; /* Alinea el contenido al inicio */
+    gap: 20px; /* Espacio entre la sección de texto y el grid */
+  }
+  .text-section {
+    flex: 1; /* Ocupa un espacio proporcional */
+    max-width: 300px; /* Ancho máximo de la sección de texto */
+  }
+  .text-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .text-section p {
+    
+    font-size: 16px;
+    text-align: left;
+    color: white;
+    line-height: 1.5;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Dos columnas en el grid */
+    gap: 20px; /* Espacio entre los elementos del grid */
+    flex: 2; /* Ocupa más espacio que la sección de texto */
+  }
+  .grid-item {
+    background-color: #12a2ce;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .grid-item img {
+    max-width: 60px; /* Tamaño máximo para la imagen */
+    margin-bottom: 10px;
+  }
+  .grid-item h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  .grid-item p {
+    color: #666;
+  }
+  .grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
         /* .gird {
             grid-column: 1/5;
             grid-row: 2/4;
